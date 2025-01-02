@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Urna Eleitoral.</title>
+</head>
+<body>
+<h1>Bem-Vindo. A Urna Eleitoral.</h1>
+
+<h2>Siga as instruções.</h2> 
+
+<h2> Vizualizar instruções ?</h2> 
+
+<button id="continuo-button" class="large-button">Sim</button> 
+
+<button id="jump-button" class="large-button">Não</button> 
+
+<div id="instrucoes" style="display: none;">
+    <h3>Instruções a seguir:</h3> 
+    <ul> 
+     <li>Primeiro passo: Escolha seus candidatos colocando fotos e um número de registro para cada um deles.</li> <br>
+
+     <li>Vote no seu candidato escolhido colocando o número registrado do respectivo candidato.</li> <br> 
+
+     <li>Aperte para confirmar e veja seu resultado.</li> <br>
+    </ul>
+</div> 
+
+<h3>Iniciar a Urna?</h3>
+<button id="start-button" class="large-button"> Iniciar.</button> 
+<div id="iniciar" style="display: none;"> 
+<form> 
+<label for="image">Escolha uma imagem do seu candidato.</label> 
+<input type="file" id="image" name="image" accept="image/*" required>
+<label for="fname">Nome do candidato:</label> 
+<input type="text" id="fname" name="fname" required minlength="4" maxlength="100" pattern="[A-Za-zÁ-ö]+" title="De preferência inserir apenas letras (com ou sem acento) sem espaços.">
+<label for="numero"> Número do candidato</label> 
+<input type="number" id="numero" name="numero" required min="10" max="99" step="1">
+<input type="submit" value="Avançar"> 
+</form>
+</div> 
+
+<div id="image-preview" style="display: none; margin-top: 20px;"> 
+<h4>Imagem do candidato</h4> 
+<img id="image-display" src="" alt="Imagem do candidato escolhido" style="max-width: 200px;">
+
+</div>
+<h3>Iniciar Votação.</h3> 
+<button id="votetion-button" class="large-button">Votação.</button> 
+
+<div>
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button>7</button>
+<button>8</button>
+<button>9</button>
+<button>0</button>
+<button>Branco</button>
+<button>Corrigir</button> 
+<button>Confirmar</button>
+</div>
+
+<h6>Atenção!. Esta urna não possui nenhuma influêcia política.</h6>
+    <script src="script.js"></script>
+</body>
+</html>
