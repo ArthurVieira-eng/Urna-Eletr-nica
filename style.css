@@ -80,4 +80,41 @@ input[type="file"] {
 #image-display {
 max-width: 100%; 
 height: auto;
+} 
+
+button.eleitoral-button{
+    padding: 10px 20px; 
+    border: solid; 
+    color: black;
+    margin: 10px; 
+    cursor: pointer;
+} 
+
+button.eleitoral:houver {
+    background-color: cadetblue;
+} 
+
+button.white-button{
+    border: solid;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button.button-correction{
+    background-color: red; 
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+} 
+
+button.button-confirm{
+    background-color: green;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+} 
+
+.input-number {
+    width: 300px;
 }
