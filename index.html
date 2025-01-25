@@ -7,6 +7,7 @@
     <title>Urna Eleitoral.</title>
 </head>
 <body>
+<!--Urna exibe as intruções de como prosseguir e caso o usuário não queira. Também é possível pular.-->
 <h1>Bem-Vindo. A Urna Eleitoral.</h1>
 
 <h2>Siga as instruções.</h2> 
@@ -16,7 +17,7 @@
 <button id="continuo-button" class="large-button">Sim</button> 
 
 <button id="jump-button" class="large-button">Não</button> 
-
+<!--Intruções da urna.-->
 <div id="instrucoes" style="display: none;">
     <h3>Instruções a seguir:</h3> 
     <ul> 
@@ -27,7 +28,7 @@
      <li>Aperte para confirmar e veja seu resultado.</li> <br>
     </ul>
 </div> 
-
+<!--Urna iniciada com as opções de escolher imagem, nome e número de candidato.-->
 <h3>Iniciar a Urna?</h3>
 <button id="start-button" class="large-button"> Iniciar.</button> 
 <div id="iniciar" style="display: none;"> 
@@ -41,29 +42,34 @@
 <input type="submit" value="Avançar"> 
 </form>
 </div> 
-
+<!--Parte reservada para armazenar a foto do candidato.-->
 <div id="image-preview" style="display: none; margin-top: 20px;"> 
 <h4>Imagem do candidato</h4> 
 <img id="image-display" src="" alt="Imagem do candidato escolhido" style="max-width: 200px;">
-
+<!--Votação iniciada com números e botões de Confirmar, corrigir e voto em branco.-->
 </div>
 <h3>Iniciar Votação.</h3> 
 <button id="votetion-button" class="large-button">Votação.</button> 
 
-<div>
-<button>1</button>
-<button>2</button>
-<button>3</button>
-<button>4</button>
-<button>5</button>
-<button>6</button>
-<button>7</button>
-<button>8</button>
-<button>9</button>
-<button>0</button>
-<button>Branco</button>
-<button>Corrigir</button> 
-<button>Confirmar</button>
+<div id="numbers" style="display: none;"> 
+    <td>
+        <!--Campo onde o numero deve aparecer conforme o usuario aperta os botões dos números.-->
+        <input type="number" id="numero-candidato" class="input-number" readonly>
+    </td>
+<!--Botões da urna.-->
+<button id="urna-button" class="eleitoral-button">1</button>
+<button id="urna-button" class="eleitoral-button">2</button>
+<button id="urna-button" class="eleitoral-button">3</button>
+<button id="urna-button" class="eleitoral-button">4</button>
+<button id="urna-button" class="eleitoral-button">5</button>
+<button id="urna-button" class="eleitoral-button">6</button>
+<button id="urna-button" class="eleitoral-button">7</button>
+<button id="urna-button" class="eleitoral-button">8</button>
+<button id="urna-button" class="eleitoral-button">9</button>
+<button id="urna-button" class="eleitoral-button">0</button>
+<button id="button-white" class="white-button">Branco</button>
+<button id="correction-button" class="button-correction">Corrigir</button> 
+<button id="confirm-button" class="button-confirm">Confirmar</button> 
 </div>
 
 <h6>Atenção!. Esta urna não possui nenhuma influêcia política.</h6>
