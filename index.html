@@ -21,7 +21,7 @@
 <div id="instrucoes" style="display: none;">
     <h3>Instruções a seguir:</h3> 
     <ul> 
-     <li>Primeiro passo: Escolha seus candidatos colocando fotos e um número de registro para cada um deles.</li> <br>
+     <li>Primeiro passo: Escolha seus candidatos. Cada candidato terá número e foto.</li> <br>
 
      <li>Vote no seu candidato escolhido colocando o número registrado do respectivo candidato.</li> <br> 
 
@@ -32,20 +32,12 @@
 <h3>Iniciar a Urna?</h3>
 <button id="start-button" class="large-button"> Iniciar.</button> 
 <div id="iniciar" style="display: none;"> 
-<form> 
-<label for="image">Escolha uma imagem do seu candidato.</label> 
-<input type="file" id="image" name="image" accept="image/*" required>
-<label for="fname">Nome do candidato:</label> 
-<input type="text" id="fname" name="fname" required minlength="4" maxlength="100" pattern="[A-Za-zÁ-ö]+" title="De preferência inserir apenas letras (com ou sem acento) sem espaços.">
-<label for="numero"> Número do candidato</label> 
-<input type="number" id="numero" name="numero" required min="10" max="99" step="1">
-<input type="submit" value="Avançar"> 
-</form>
+
+    <p>Aqui você verá a lista de candidatos disponíveis.</p>
 </div> 
-<!--Parte reservada para armazenar a foto do candidato.-->
-<div id="image-preview" style="display: none; margin-top: 20px;"> 
-<h4>Imagem do candidato</h4> 
-<img id="image-display" src="" alt="Imagem do candidato escolhido" style="max-width: 200px;">
+<h3>Lista de Candidatos</h3>
+<div id="lista-candidatos" class="lista-candidatos"></div>
+
 <!--Votação iniciada com números e botões de Confirmar, corrigir e voto em branco.-->
 </div>
 <h3>Iniciar Votação.</h3> 
@@ -57,16 +49,16 @@
         <input type="number" id="numero-candidato" class="input-number" readonly>
     </td>
 <!--Botões da urna.-->
-<button id="urna-button" class="eleitoral-button">1</button>
+<br> <button id="urna-button" class="eleitoral-button">1</button>
 <button id="urna-button" class="eleitoral-button">2</button>
-<button id="urna-button" class="eleitoral-button">3</button>
+<button id="urna-button" class="eleitoral-button">3</button> <br>
 <button id="urna-button" class="eleitoral-button">4</button>
 <button id="urna-button" class="eleitoral-button">5</button>
-<button id="urna-button" class="eleitoral-button">6</button>
+<button id="urna-button" class="eleitoral-button">6</button> <br> 
 <button id="urna-button" class="eleitoral-button">7</button>
 <button id="urna-button" class="eleitoral-button">8</button>
-<button id="urna-button" class="eleitoral-button">9</button>
-<button id="urna-button" class="eleitoral-button">0</button>
+<button id="urna-button" class="eleitoral-button">9</button> <br> 
+<button id="urna-button" class="eleitoral-button">0</button> <br> 
 <button id="button-white" class="white-button">Branco</button>
 <button id="correction-button" class="button-correction">Corrigir</button> 
 <button id="confirm-button" class="button-confirm">Confirmar</button> 
